@@ -1,0 +1,14 @@
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\bin\Debug\net8.0\LabCleanCode.exe
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\bin\Debug\net8.0\LabCleanCode.deps.json
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\bin\Debug\net8.0\LabCleanCode.runtimeconfig.json
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\bin\Debug\net8.0\LabCleanCode.dll
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\bin\Debug\net8.0\LabCleanCode.pdb
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.AssemblyInfoInputs.cache
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.AssemblyInfo.cs
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.csproj.CoreCompileInputs.cache
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.dll
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\refint\LabCleanCode.dll
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.pdb
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.genruntimeconfig.cache
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\ref\LabCleanCode.dll
