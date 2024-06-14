@@ -35,6 +35,7 @@ namespace MooGame
                     bbcc = checkBC(goal, guess);
                     Console.WriteLine(bbcc + "\n");
                 }
+
                 StreamWriter output = new StreamWriter("result.txt", append: true);
                 output.WriteLine(name + "#&#" + nGuess);
                 output.Close();
@@ -149,15 +150,15 @@ namespace MooGame
         }
 
 
-        public override bool Equals(Object p)
-        {
-            return Name.Equals(((PlayerData)p).Name);
-        }
+        //public override bool Equals(Object p)
+        //{
+        //    return Name.Equals(((PlayerData)p).Name);
+        //}
 
 
-        public override int GetHashCode()
-        {
-            return Name.GetHashCode();
-        }
+        //public override int GetHashCode()
+        //{
+        //    return Name.GetHashCode();
+        //}
     }
 }

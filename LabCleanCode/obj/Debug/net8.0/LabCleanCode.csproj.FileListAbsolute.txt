@@ -12,3 +12,4 @@ C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\refint\La
 C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.pdb
 C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.genruntimeconfig.cache
 C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\ref\LabCleanCode.dll
+C:\Users\neaca\source\repos\LabCleanCode\LabCleanCode\obj\Debug\net8.0\LabCleanCode.sourcelink.json
