@@ -8,25 +8,25 @@ namespace LabCleanCode
 {
     public class MooGame
     {
-        public string makeGoal()
+        public string CreateRandomNumber()
         {
             Random randomGenerator = new Random();
-            string goal = "";
+            string number = "";
             for (int i = 0; i < 4; i++)
             {
                 int random = randomGenerator.Next(10);
                 string randomDigit = "" + random;
-                while (goal.Contains(randomDigit))
+                while (number.Contains(randomDigit))
                 {
                     random = randomGenerator.Next(10);
                     randomDigit = "" + random;
                 }
-                goal = goal + randomDigit;
+                number = number + randomDigit;
             }
-            return goal;
+            return number;
         }
 
-        public string checkBC(string goal, string guess)
+        public string CompareNumbers(string number, string guess)
         {
             int cows = 0, bulls = 0;
             guess += "    ";     // if player entered less than 4 chars
@@ -34,7 +34,7 @@ namespace LabCleanCode
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    if (goal[i] == guess[j])
+                    if (number[i] == guess[j])
                     {
                         if (i == j)
                         {

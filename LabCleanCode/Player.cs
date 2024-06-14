@@ -8,36 +8,30 @@ namespace LabCleanCode
 {
     public class Player
     {
+        int totalGuesses;
         public string Name { get; private set; }
-        public int NGames { get; private set; }
-        int totalGuess;
-
-
+        public int Games { get; private set; }
+        
         public Player(string name, int guesses)
         {
             Name = name;
-            NGames = 1;
-            totalGuess = guesses;
+            Games = 1;
+            totalGuesses = guesses;
         }
 
         public void Update(int guesses)
         {
-            totalGuess += guesses;
-            NGames++;
+            totalGuesses += guesses;
+            Games++;
         }
-
         public double Average()
         {
-            return (double)totalGuess / NGames;
+            return (double)totalGuesses / Games;
         }
-
-
         public override bool Equals(Object p)
         {
             return Name.Equals(((Player)p).Name);
         }
-
-
         public override int GetHashCode()
         {
             return Name.GetHashCode();

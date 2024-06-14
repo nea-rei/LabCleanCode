@@ -9,49 +9,49 @@ namespace LabCleanCode
     class Controller
     {
         MooGame mooGame;
-        public Controller(MooGame mooGame)
+        IUI ui;
+        public Controller(MooGame mooGame, IUI ui)
         {
             this.mooGame = mooGame;
+            this.ui = ui;
         }
         public void Run()
         {
-            bool playOn = true;
+
             Console.WriteLine("Enter your user name:\n");
-            string name = Console.ReadLine();
+            string name = ui.GetString().Trim();
+            string input;
 
-            while (playOn)
+            do
             {
-                string goal = mooGame.makeGoal();
-
+                string randomNumber = mooGame.CreateRandomNumber();
 
                 Console.WriteLine("New game:\n");
                 //comment out or remove next line to play real games!
-                Console.WriteLine("For practice, number is: " + goal + "\n");
-                string guess = Console.ReadLine();
+                Console.WriteLine("For practice, number is: " + randomNumber + "\n");
+
 
                 int nGuess = 1;
-                string bbcc = mooGame.checkBC(goal, guess);
+                string guess = ui.GetString().Trim();
+                string bbcc = mooGame.CompareNumbers(randomNumber, guess);
                 Console.WriteLine(bbcc + "\n");
                 while (bbcc != "BBBB,")
                 {
                     nGuess++;
-                    guess = Console.ReadLine();
+                    guess = ui.GetString();
                     Console.WriteLine(guess + "\n");
-                    bbcc = mooGame.checkBC(goal, guess);
+                    bbcc = mooGame.CompareNumbers(randomNumber, guess);
                     Console.WriteLine(bbcc + "\n");
                 }
 
                 StreamWriter output = new StreamWriter("result.txt", append: true);
                 output.WriteLine(name + "#&#" + nGuess);
                 output.Close();
-                Results.showTopList();
+                Results.showResultList();
                 Console.WriteLine("Correct, it took " + nGuess + " guesses\nContinue?");
-                string answer = Console.ReadLine();
-                if (answer != null && answer != "" && answer.Substring(0, 1) == "n")
-                {
-                    playOn = false;
-                }
-            }
+                input = ui.GetString().Trim();
+
+            } while (!input.ToLower().StartsWith("n"));
         }
 
         void Display()

@@ -10,7 +10,8 @@ namespace LabCleanCode
         public static void Main(string[] args)
         {
             MooGame game = new MooGame();
-            Controller controller = new Controller(game);
+            IUI ui = new ConsoleIO();
+            Controller controller = new Controller(game, ui);
             controller.Run();
         }
     }
