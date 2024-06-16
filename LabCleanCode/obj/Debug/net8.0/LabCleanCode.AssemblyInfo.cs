@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LabCleanCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a51b05839ce33f0c6e4c9c553f52f644be0d4826")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbebfe3a0d3a8222a34435fa86c1c8d94dd858dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("LabCleanCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LabCleanCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
