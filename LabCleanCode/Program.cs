@@ -6,12 +6,12 @@ namespace LabCleanCode
 {
     class MainClass
     {
-
         public static void Main(string[] args)
         {
-            MooGame game = new MooGame();
+            IGame game = new MooGame();
             IUI ui = new ConsoleIO();
-            Controller controller = new Controller(game, ui);
+            IStatistics statistics = new Results();
+            Controller controller = new Controller(game, ui, statistics);
             controller.Run();
         }
     }

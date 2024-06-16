@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LabCleanCode.Interface;
 
-namespace LabCleanCode
+namespace LabCleanCode.Classes
 {
-    public class MooGame
+    public class MooGame : IGame
     {
         public string CreateRandomNumber()
         {
@@ -24,6 +25,11 @@ namespace LabCleanCode
                 number = number + randomDigit;
             }
             return number;
+        }
+
+        public void EnterGuess(string guess)
+        {
+
         }
 
         public string CompareNumbers(string number, string guess)

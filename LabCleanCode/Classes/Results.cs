@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace LabCleanCode
 {
-    public class Results
+    public class Results : IStatistics
     {
-        public static void showResultList()
+        public void ShowResultList()
         {
             List<Player> results = ReadPlayerDataFromFile("result.txt");
             DisplayPlayerData(results);
         }
-
-        private static List<Player> ReadPlayerDataFromFile(string fileName)
+        public void AddResultToList(string name, int guesses)
+        {
+            StreamWriter output = new StreamWriter("result.txt", append: true);
+            output.WriteLine(name + "#&#" + guesses);
+            output.Close();
+        }
+        public List<Player> ReadPlayerDataFromFile(string fileName)
         {
             List<Player> results = new List<Player>();
             using (StreamReader input = new StreamReader(fileName))
@@ -40,8 +46,7 @@ namespace LabCleanCode
             results.Sort((player1, player2) => player1.Average().CompareTo(player2.Average()));
             return results;
         }
-
-        private static void DisplayPlayerData(List<Player> results)
+        public void DisplayPlayerData(List<Player> results)
         {
             Console.WriteLine("Player     Games  Average");
             foreach (Player p in results)

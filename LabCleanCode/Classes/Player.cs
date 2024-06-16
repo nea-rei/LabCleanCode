@@ -11,7 +11,7 @@ namespace LabCleanCode
         int totalGuesses;
         public string Name { get; private set; }
         public int Games { get; private set; }
-        
+
         public Player(string name, int guesses)
         {
             Name = name;
