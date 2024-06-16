@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LabCleanCode
+namespace LabCleanCode.Classes
 {
     public class Player
     {
@@ -28,7 +28,7 @@ namespace LabCleanCode
         {
             return (double)totalGuesses / Games;
         }
-        public override bool Equals(Object p)
+        public override bool Equals(object p)
         {
             return Name.Equals(((Player)p).Name);
         }

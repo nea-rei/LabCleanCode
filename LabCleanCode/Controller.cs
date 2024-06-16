@@ -54,16 +54,19 @@ namespace LabCleanCode
                 ui.PutString(bullsAndCows + "\n");
             } while (bullsAndCows != "BBBB,");
 
+            Result(name, guesses);
+        }
+        private string GetUserName()
+        {
+            Console.WriteLine("Enter your user name:\n");
+            return ui.GetString().Trim();
+        }
+
+        private void Result(string name, int guesses)
+        {
             statistics.AddResultToList(name, guesses);
             statistics.ShowResultList();
             ui.PutString("Correct, it took " + guesses + " guesses\nContinue?");
         }
-
-        private string GetUserName()
-       {
-            Console.WriteLine("Enter your user name:\n");
-            return ui.GetString().Trim();
-       }
-
     }
 }
